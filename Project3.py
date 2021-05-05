@@ -84,9 +84,9 @@ def getPrediction(train, test):
 
 pd.set_option("display.max_rows", None, "display.max_columns", None)
 # .sample(frac=1).reset_index(drop=True)
-df = pd.read_csv('data1.csv',  delimiter='|', names=['Data'])
+df = pd.read_csv(sys.argv[1],  delimiter='|', names=['Data'])
 # .sample(frac=1).reset_index(drop=True)
-df_test = pd.read_csv('data2.csv', delimiter='|', names=['Data'])
+df_test = pd.read_csv(sys.argv[2], delimiter='|', names=['Data'])
 np.random.shuffle(df_test.values.reshape(-1, 4, df.shape[1]))
 np.random.shuffle(df.values.reshape(-1, 4, df.shape[1]))
 
