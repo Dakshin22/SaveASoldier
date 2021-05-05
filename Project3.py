@@ -74,12 +74,12 @@ def getPrediction(train, test):
     rf = RandomForestClassifier(n_estimators=20)
     rf.fit(x_train, y_train)
     y_pred = rf.predict(x_test)
-    print(confusion_matrix(y_test, y_pred))
-    print("accuracy: ", accuracy_score(y_test, y_pred))
-    print("recall: ", recall_score(y_pred=y_pred,
-        y_true=y_test, pos_label='Pain'))
-    print("precision: ", precision_score(y_pred=y_pred,
-        y_true=y_test, pos_label='Pain'))
+    #print(confusion_matrix(y_test, y_pred))
+    #print("accuracy: ", accuracy_score(y_test, y_pred))
+    #print("recall: ", recall_score(y_pred=y_pred,
+    #    y_true=y_test, pos_label='Pain'))
+    #print("precision: ", precision_score(y_pred=y_pred,
+    #    y_true=y_test, pos_label='Pain'))
     return y_pred
 
 pd.set_option("display.max_rows", None, "display.max_columns", None)
@@ -115,14 +115,14 @@ getNormalizedDataFrame(filteredDfresTest, downSampleLength)
 # print(filteredDf)
 # dia
 # get data
-#x_train = filteredDfdia.iloc[:,0].to_numpy()
-print("DiaPredictions")
+
+
 DiaPredictions = getPrediction(filteredDfdia, filteredDfdiaTest)
-print("SysPredictions")
+
 SysPredictions = getPrediction(filteredDfsys, filteredDfsysTest)
-print("EdaPredictions")
+
 EdaPredictions = getPrediction(filteredDfeda, filteredDfedaTest)
-print("ResPredictions")
+
 ResPredictions = getPrediction(filteredDfres, filteredDfresTest)
 
 # print(filteredDf)
@@ -148,7 +148,3 @@ for index, row in filteredDf.iterrows():
 
 
 print("accuracy: ", accuracy_score(correctPredictions, combinedPredictions))
-print("recall: ", recall_score(y_pred=combinedPredictions,
-      y_true=correctPredictions, pos_label='Pain'))
-print("precision: ", precision_score(y_pred=combinedPredictions,
-      y_true=correctPredictions, pos_label='Pain'))
