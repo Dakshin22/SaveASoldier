@@ -11,7 +11,7 @@ In this project, we are discussing a pain recognition system based on physiologi
 
 A decision tree is an algorithm that is able to classify input data based on a series of decisions. A basic structure of a decision tree is below. The tree starts at the root node, and makes splits, or decisions, where the data will move further down the tree. When a pure classification is achieved (ex. Pain or No Pain), the a decision is made.
 
-![](RackMultipart20210904-4-35umen_html_95198936573ac3d8.jpg)
+![](data/DTree.jpg)
 
 However, a single decision tree is vulnerable to overfitting to the training data and bias of a single data set. To comband this in this paper, we use random forest.
 
