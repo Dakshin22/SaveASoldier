@@ -42,19 +42,19 @@ Data1.csv: testing
 
 Data2.csv: training
 
-![](data/Results1.jpg)
+![](data/Results1.png)
 
-![](data/Results2.jpg)
+![](data/Results2.png)
 
 Data1.csv: training
 
 Data2.csv: testing
 
-![](data/Results3.jpg)
+![](data/Results3.png)
 
-![](data/Results4.jpg)
+![](data/Results4.png)
 
-We can sese that the accuracy, prescision and recall was generally higher when data1.csv was the testing data than vice versa.
+We can see that the accuracy, prescision and recall was generally higher when data1.csv was the testing data than vice versa.
 
 1.
 # Discussion and conclusion
