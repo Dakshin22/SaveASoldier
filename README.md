@@ -1,7 +1,7 @@
 # Predicting pain based on Physiological data using Random Forests and Score-Level Fusion
 
 Dakshin Rathan
-1.
+
 # Introduction
 
 In this project, we are discussing a pain recognition system based on physiological data using score level fusion with random forest classifiers. This is an important development and accurately predicting whether someone is in pain is useful for soldiers in combat.
