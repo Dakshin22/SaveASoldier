@@ -1,40 +1,13 @@
 # Predicting pain based on Physiological data using Random Forests and Score-Level Fusion
 
 Dakshin Rathan
-
-**_Abstract_—Brief overview of what you did, why it&#39;s important, and the results**
-
 1.
 # Introduction
 
-In this paper, we are discussing a pain recognition system based on physiological data using score level fusion with random forest classifiers. This is an important development and accurately predicting whether someone is in pain is useful for soldiers in combat, children who cannot clearly communicate, and for patients in a hospital.
+In this project, we are discussing a pain recognition system based on physiological data using score level fusion with random forest classifiers. This is an important development and accurately predicting whether someone is in pain is useful for soldiers in combat.
 
-Below are some short discussions on related papers discussing pain recognition and different methods to achieve accurate pain recognition.
-
-Paper 1: Improving Pain Recognition Through Better Utilisation of Temporal Information
-
-This paper explores the most accurate method of detecting pain through a video. Since videos have large file sizes, compression is done for temporal signal scanning. However, by using the spatial signals, a more accurate result is found.
-
-Paper 2: Automatic Pain Recognition from Video and Biomedical Signals
-
-This paper explores a automatic and continuous system of pain monitoring. It combines video analysis of facial expression and physiological data to make predictions using the BioVid Heat Pain Database.
-
-Paper 3: Deep Multimodal Pain Recognition: A Database and Comparison of Spatio-Temporal Visual Modalities
-
-This paper presents a pain recognition system using deep learning with multimodal data. It uses thermal data, video data pixel by pixel, and depth data for spatial analysis.
-
-Paper 4: Automatic Recognition Methods Supporting Pain Assessment: A Survey
-
-This paper shines light on various pain recognition systems and evaluates them via a survey. This paper also discusses the challenge of validating pain recognition results, as it is subjective and difficult to know if someone is actually in pain or not unless they answer themselves.
-
-Paper 5: Spatio-temporal Pain Recognition in CNN-Based Super-Resolved Facial Images
-
-This paper discusses a deep learning CNN model that takes spatial and temporal data from videos as well as facial resolution manipulation to improve accuracy of pain detection. This paper presents a super resolution algorithm to manipulate facial video frames with different resolutions.
-
-1.
 # Method
 
-Discuss random forest here. Cite Brieman&#39;s work - can find reference in Google Scholar.
 
 A decision tree is an algorithm that is able to classify input data based on a series of decisions. A basic structure of a decision tree is below. The tree starts at the root node, and makes splits, or decisions, where the data will move further down the tree. When a pure classification is achieved (ex. Pain or No Pain), the a decision is made.
 
