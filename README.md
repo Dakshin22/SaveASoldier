@@ -17,7 +17,7 @@ However, a single decision tree is vulnerable to overfitting to the training dat
 
 A random forest randomly samples a portion of the input data with replacement and creates many different and unique decision trees. Because of this, different splits occur and different decisions occur in each of the trees. After all the trees have made a decision, the random forest will make a classification in line with the majority decision among the trees.
 
-![](RackMultipart20210904-4-35umen_html_3cdcb802ffbd1f0e.jpg)
+![](data/RF.jpg)
 
 In this project, we classify whether a subject is in pain or not based entries of signal data for four types of physiological signals: Respiration Rate (RES), Systolic Blood Pressure (SYS), Diastolic Blood Pressure (DIA), and electrodermal activity (EDA).
 
@@ -42,17 +42,17 @@ Data1.csv: testing
 
 Data2.csv: training
 
-![](RackMultipart20210904-4-35umen_html_cbec8e863ad8e05d.png)
+![](data/Results1.jpg)
 
-![](RackMultipart20210904-4-35umen_html_b4a18237baf75ab2.png)
+![](data/Results2.jpg)
 
 Data1.csv: training
 
 Data2.csv: testing
 
-![](RackMultipart20210904-4-35umen_html_5aee6ae6c04ce013.png)
+![](data/Results3.jpg)
 
-![](RackMultipart20210904-4-35umen_html_d4ec5e4608849a2e.png)
+![](data/Results4.jpg)
 
 We can sese that the accuracy, prescision and recall was generally higher when data1.csv was the testing data than vice versa.
 
@@ -65,6 +65,6 @@ Do you think phsyiological data is good for pain recognition? What about fusion?
 
 According to the data, the majority voting fusion approach did not improve the accuracy, recall or precision by very much. We think that fusion method from project 1, where the data was fused in the before random forest classification worked better. Though we cannot conclude anything definitively, we can see that by the results below from our project 1 algorithm using the project 1 fusion method with hand crafted features, that the method results in higher accuracy, recall, and precision.
 
-![](RackMultipart20210904-4-35umen_html_be31549f3855d638.png)
+![](data/Results5.jpg)
 
 We think that contributing multipole modalities can improve the accuracy of the machine learning models. In the papers we referenced in the jintroduction section, using data from thermal readings, fiacial photos, videos of different resolutions, and temporal and spatial analysis of those videos allowed for more reliable and accurate predictions. This allows the model to get a more full picture of the different variables that contribute to pain.
