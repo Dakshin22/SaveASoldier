@@ -7,9 +7,7 @@ Dakshin Rathan
 In this project, we are discussing a pain recognition system based on physiological data using score level fusion with random forest classifiers. This is an important development and accurately predicting whether someone is in pain is useful for soldiers in combat.
 
 # Method
-
-
-A decision tree is an algorithm that is able to classify input data based on a series of decisions. A basic structure of a decision tree is below. The tree starts at the root node, and makes splits, or decisions, where the data will move further down the tree. When a pure classification is achieved (ex. Pain or No Pain), the a decision is made.
+A decision tree is an algorithm that can classify input data based on a series of decisions. A basic structure of a decision tree is below. The tree startsat the root node and makes splits, or decisions, where the data will move further down the tree. When a pure classification is achieved (ex. Pain or No Pain), a decision is made.
 
 ![](data/DTree.jpg)
 
@@ -30,41 +28,3 @@ Because we are using one random forest for each type of physiological data, we f
 Score Level Fusion
 
 After we get predictions from each random forest, we use a method called score level fusion to generate the final result for each subject. For each subject, we have a prediction from each of the 4 random forests corresponding to a type of physiological signal. Whichever choice (pain or no pain) has the majority vote among the 4 trees, is chosen as the final decision for a test subject.
-
-Talk about the fusion approach you used. If you did the extra credit detail both of them.
-
-1.
-# Experimental design and results
-
-We used two different csv files as splits for training and testing. We also printed the confusiong matrix, accuracy, recall and precision for each individual random forest and the combined prediction results after score level fusion for each alternative. The results of the experiment is below.
-
-Data1.csv: testing
-
-Data2.csv: training
-
-![](data/Results1.png)
-
-![](data/Results2.png)
-
-Data1.csv: training
-
-Data2.csv: testing
-
-![](data/Results3.png)
-
-![](data/Results4.png)
-
-We can see that the accuracy, prescision and recall was generally higher when data1.csv was the testing data than vice versa.
-
-1.
-# Discussion and conclusion
-
-I think physiological data is good for pain recognition. However, some physiological responses are shown to contribute to pain more so than others.
-
-Do you think phsyiological data is good for pain recognition? What about fusion? Is there a better approach?
-
-According to the data, the majority voting fusion approach did not improve the accuracy, recall or precision by very much. We think that fusion method from project 1, where the data was fused in the before random forest classification worked better. Though we cannot conclude anything definitively, we can see that by the results below from our project 1 algorithm using the project 1 fusion method with hand crafted features, that the method results in higher accuracy, recall, and precision.
-
-![](data/Results5.jpg)
-
-We think that contributing multipole modalities can improve the accuracy of the machine learning models. In the papers we referenced in the jintroduction section, using data from thermal readings, fiacial photos, videos of different resolutions, and temporal and spatial analysis of those videos allowed for more reliable and accurate predictions. This allows the model to get a more full picture of the different variables that contribute to pain.
